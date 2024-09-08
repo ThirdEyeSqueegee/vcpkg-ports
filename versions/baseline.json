@@ -1,0 +1,8 @@
+{
+  "default": {
+    "spdlog": {
+      "baseline": "0",
+      "port-version": 0
+    }
+  }
+}
