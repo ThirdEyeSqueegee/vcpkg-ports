@@ -25,7 +25,7 @@ with open("./versions/baseline.json") as f:
 baseline["default"]["spdlog"]["baseline"] = spdlog_tag
 
 baseline_str = dumps(baseline, indent=2)
-baseline_str += "\r\n"
+baseline_str += "\n"
 
 with open("./versions/baseline.json", "w", newline="\r\n") as f:
     f.write(baseline_str)
@@ -37,7 +37,7 @@ with open("./ports/spdlog/vcpkg.json") as f:
 vcpkg_json["version-semver"] = spdlog_tag
 
 vcpkg_json_str = dumps(vcpkg_json, indent=2)
-vcpkg_json_str += "\r\n"
+vcpkg_json_str += "\n"
 
 with open("./ports/spdlog/vcpkg.json", "w", newline="\r\n") as f:
     f.write(vcpkg_json_str)
@@ -49,7 +49,7 @@ with open("./versions/s-/spdlog.json") as f:
 spdlog_json["versions"][0]["version-semver"] = spdlog_tag
 
 spdlog_json_str = dumps(spdlog_json, indent=2)
-spdlog_json_str += "\r\n"
+spdlog_json_str += "\n"
 
 with open("./versions/s-/spdlog.json", "w", newline="\r\n") as f:
     f.write(spdlog_json_str)

@@ -12,7 +12,7 @@ with open("./versions/s-/spdlog.json") as f:
 version["versions"][0]["git-tree"] = spdlog_git_tree.strip("\n")
 
 version_str = dumps(version, indent=2)
-version_str += "\r\n"
+version_str += "\n"
 
 with open("./versions/s-/spdlog.json", "w", newline="\r\n") as f:
     f.write(version_str)
